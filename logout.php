@@ -9,6 +9,6 @@ unset($_SESSION['uname']);
 // session_destroy();
 
 // Jump to login page
-header('Location: home.php');
+header('Location: index.php');
 
 ?>

@@ -34,7 +34,7 @@ else{
 $acc_cost=1200;
 }
 $tots=($trans_cost + $acc_cost)*$no_of_people;
-$Packagename = 'Banglore-Mysore';
+$Packagename = 'US';
 
 $sql = "INSERT INTO packagedesc (Username,Mode,TransCost,Accommodation,Acc_Cost,no_of_people,Total_Cost,Packagename) VALUES ('$username','$mode','$trans_cost','$acc','$acc_cost','$no_of_people','$tots','$Packagename')";
 if(mysqli_query($link, $sql)){

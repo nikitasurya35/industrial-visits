@@ -18,7 +18,7 @@ $type = mysqli_real_escape_string($link, $_POST['type']);
 $sql = "INSERT INTO signup (uname,pwd,mobile,type) VALUES ('$uname','$pwd','$mobile','$type')";
 if(mysqli_query($link, $sql)){
     echo "Records added successfully.";
-    header('Location: home.php');
+    header('Location: index.php');
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }

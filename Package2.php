@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Banglore-Mysore Package</title>
+<title>US Package</title>
 <style>
 
 h1{
@@ -126,24 +126,24 @@ function getState(val) {
 </script>
 <body background="https://pub-static.haozhaopian.net/static/web/site/features/backgrounds/images/Geometry_02_A-small-map3cea4231fb2c7a7bbc404b6510aea57d.jpg">
 
-<h1>Banglore-Mysore Package Details</h1>
+<h1>US Package Details</h1>
 <!-- Slideshow container -->
 <div class="slideshow-container" align="center">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="925753485s.jpg" style="width:100%">
+    <img src="c6.jpg" style="width:100%">
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="bang21.jpg" style="width:100%">
+    <img src="c6.jpg" style="width:100%">
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="bang31.jpg" style="width:100%">
+    <img src="c6.jpg" style="width:100%">
   </div>
 
   <!-- Next and previous buttons -->
@@ -192,9 +192,9 @@ function showSlides(n) {
 <form>
 <p>Available on:
 <select style="width: 150px; height:50px; font-size: 20px;" onchange="javascript:location.href = this.value">
-  <option value="http://localhost/ip/PackageDesc1.html">23/10/2019</option>
-  <option value="http://localhost/ip/PackageDesc1.html">15/11/2019</option>
-  <option value="http://localhost/ip/PackageDesc1.html">20/12/2019</option>
+  <option value="http://localhost/ip/PackageDesc2.html">23/10/2019</option>
+  <option value="http://localhost/ip/PackageDesc2.html">15/11/2019</option>
+  <option value="http://localhost/ip/PackageDesc2.html">20/12/2019</option>
 </select>
 
 </p>

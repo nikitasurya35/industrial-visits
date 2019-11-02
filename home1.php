@@ -1,7 +1,6 @@
 <?php 
-session_start();
+session_start(); 
 ?>
-
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
@@ -18,6 +17,22 @@ session_start();
 div {
   padding-bottom: 70px;
 }
+
+.bg-img {
+  /* The image used */
+  background-image: url("city1.jpg");
+
+  /* Center and scale the image nicely */
+  background-size: cover;
+  width:1345px;  
+  height:650px;
+  max-width: 100%;
+  opacity: 1;
+  /* Needed to position the navbar */
+  position: relative;
+
+}
+
 /* Position the navbar container inside the image */
 .container {
   position: absolute;
@@ -88,6 +103,7 @@ button:hover {
   padding: 10px 18px;
   background-color: #f44336;
 }
+
 /* Add padding to containers */
 .containerr {
   padding: 16px;
@@ -176,38 +192,24 @@ span.psw {
   text-align: center;
   color: white;
 }
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-.button2 {background-color: #4CAF50;} /* Green */
+
+
 </style>
 <body>
+<div class="bg-img">
   <div class="container">
   <div class="centered">
-      <h1 style="color:white;" style="font-style:bold; "> INDUSTRIAL VISITS </h1></div>
+  <h1 style="color:white;" style="font-style:bold; "> INDUSTRIAL VISITS </h1></div>
     <div class="topnav">
-     <a href="http://localhost/ip/index.php"><button style.display='block'>Home</button></a>
+      <a href="#home"><button style.display='block'>Home</button></a>
       <a href="#login"><button onclick="document.getElementById('id01').style.display='block'">Login</button></a>
       <!--a href="#contact"><button style.display='block'>Contact</button></a-->
-      <a href="#"><h2>hello, <?php echo strip_tags($_SESSION['uname']); ?></h2></a>
+      <a href="#about"><button style.display='block'>About Us</button></a>
+      <a href="#"><h2>hello, <?php echo $_SESSION['uname']; ?></h2></a>
       <a href="logout.php"><h3 align="left">logout</h3></a>
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="centered">
-      <h1 style="color:black;" style="font-style:bold; "> Welcome Admin! </h1></div>
-    </div>
-  </div>
 
 <!-- The Modal -->
 <div id="id01" class="modal">
@@ -215,7 +217,8 @@ span.psw {
 class="close" title="Close Modal">&times;</span>
 
   <!-- Modal Content -->
-  <form class="modal-content animate" action="log1.php">
+  <form class="modal-content animate" action="log1.php" method="post">
+    
 
     <div class="containerr">
       <label for="uname"><b>Username</b></label>
@@ -245,9 +248,41 @@ class="close" title="Close Modal">&times;</span>
     </div>
   </form>
 </div>
-<button class="button button2"><a href="http://localhost/ip/abc.php">AddPackage</button></a>
 
-<button class="button button2"><a href="http://localhost/ip/viewbookings.php">View Bookings</button></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>
+<a href="https://www.w3schools.com">
+<img border="0" alt="place" src="place.jpg" width="300" height="300" style="padding-left:400px; ">
+</a>
+<a href="https://www.w3schools.com">
+<img border="0" alt="place" src="place1.jpg" width="300" height="300">
+</a>
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1 style="text-align: center; font-style: bold; font-size: 35px; padding: 20px"><a  name="about"> ABOUT US </a></h1>
+<p style="padding-top: 0px; padding-right: 30px; padding-left: 30px;padding-bottom: 30px; font-style: bold; font-size: 25px; font-family: Times New Roman; text-align: justify-all;">
+  Industry Visit Tour System is a specific web based reservation system designed to make it easier for people or college to book industrial tour packages online. The system allows the user to check various travel destinations and choose his destination accordingly. 
+</p>
+
+
+
 
 
 </body>

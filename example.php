@@ -6,12 +6,11 @@ session_start();
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
-  * {box-sizing:border-box}
+	* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1250px;
-  
+  max-width: 1150px;
   position: relative;
   margin: auto;
   
@@ -70,7 +69,7 @@ h1 {
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
-  padding: 11px;
+  padding: 8px;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -103,20 +102,6 @@ h1 {
   font-family:"Times New Roman",Times, sans-serif;
   font-size: 25px;
 
-}
-
-.topnav1 {
-  overflow: hidden;
-  background-color: #333;
-}
-/* Navbar links */
-.topnav1 a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 0px;
-  text-decoration: none;
-  font-size: 17px;
 }
 
 /* The navbar */
@@ -286,26 +271,21 @@ span.psw {
 }
 </style>
 <body>
-  <!-- Slideshow container -->
+	<!-- Slideshow container -->
 <div class="slideshow-container">
-  <!--div class="container"-->
-    <div class="centered">
-    <h1 style="color:white;" style="font-style:bold; "> INDUSTRIAL VISITS </h1></div>
-      <div class="topnav">
-          <a href="#home"><button style.display='block'>Home</button></a>
-          <a href="#login"><button onclick="document.getElementById('id01').style.display='block'">Login</button></a>
+	<!--div class="container"-->
+  	<div class="centered">
+  	<h1 style="color:white;" style="font-style:bold; "> INDUSTRIAL VISITS </h1></div>
+    	<div class="topnav">
+      		<a href="#home"><button style.display='block'>Home</button></a>
+      		<a href="#login"><button onclick="document.getElementById('id01').style.display='block'">Login</button></a>
       <!--a href="#contact"><button style.display='block'>Contact</button></a-->
-          <a href="#about"><button style.display='block'>About Us</button></a>
-
-          <a href="logout.php"><button style.display='block'>Logout</button></a>
-          <a href="#"><h2>hello, <?php echo strip_tags($_SESSION['uname']); ?></h2></a>
-          
-      </div>
-      <div class="topnav1">
-      <p style="font-size: 40px; color: white; font-style: bold; font-family: Times New Roman;" align="left">INDUSTRIAL VISITS AND PLANNING</p>
-      <p style="color: white;">Now plan your visit online.</p>
-    </div>
-      <!-- The Modal -->
+      		<a href="#about"><button style.display='block'>About Us</button></a>
+      		<a href="logout.php"><button style.display='block'>Logout</button></a>
+      		<a href="#"><h2>hello, <?php echo $_SESSION['uname']; ?></h2></a-->
+      		
+    	</div>
+    	<!-- The Modal -->
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'"
 class="close" title="Close Modal">&times;</span>
@@ -346,23 +326,23 @@ class="close" title="Close Modal">&times;</span>
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <!--div class="numbertext">1 / 3</div-->
-    <img src="c5.jpg" style="width:100%">
+    <img src="img1.jpg" style="width:100%">
+    <div class="text">caption one</div>
   </div>
 
   <div class="mySlides fade">
     <!--div class="numbertext">2 / 3</div-->
-    <img src="c6.jpg" style="width:100%">
+    <img src="img2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
     <!--div class="numbertext">3 / 3</div-->
-    <img src="c8.jpg" style="width:100%">
+    <img src="img3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
   </div>
 </div>
 <br>
-<br>
-
-
 
 <!-- MAIN (Center website) -->
 <div class="main">
@@ -371,48 +351,57 @@ class="close" title="Close Modal">&times;</span>
 <div class="row">
   <div class="column">
     <div class="content">
-      <img src="925753485s.jpg" alt="Mountains" style="width:100%"><a href="http://localhost/ip/Package.php">
-      <h3> Banglore-mysore</h3></a>
+      <img src="place1.jpg" alt="Mountains" style="width:100%">
+      <h3> place</h3>
       <!--p>Lorem ipsum..</p-->
     </div>
   </div>
   <div class="column">
     <div class="content">
-      <img src="c1.jpg" alt="Lights" style="width:100%"><a href="http://localhost/ip/Package2.php
-        "><h3>US</h3></a>
+      <img src="place2.jpg" alt="Lights" style="width:100%">
+      <h3>place 1</h3>
       <!--p>Lorem ipsum..</p-->
     </div>
   </div>
   <div class="column">
     <div class="content">
-      <img src="c7.jpg" alt="Nature" style="width:100%">
+      <img src="place.jpg" alt="Nature" style="width:100%">
       <h3> place 2</h3>
       <!--p>Lorem ipsum..</p-->
     </div>
   </div>
   <div class="column">
     <div class="content">
-      <img src="c8.jpg" alt="visit" style="width:100%">
+      <img src="place3.jpg" alt="visit" style="width:100%">
       <h3>place 3</h3>
       <!--p>Lorem ipsum..</p-->
     </div>
   </div>
-</div>
   <br>
   <br>
   <br>
-  
-  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 <h1 style="text-align: center; font-style: bold; font-size: 35px; padding: 20px"><a  name="about"> ABOUT US </a></h1>
-<p style="padding-top: 0px; padding-right: 20px; padding-left: 20px;padding-bottom: 20px; font-style: bold; font-size: 25px; font-family: Times New Roman; text-align: center;">
+<p style="padding-top: 0px; padding-right: 30px; padding-left: 30px;padding-bottom: 30px; font-style: bold; font-size: 25px; font-family: Times New Roman; text-align: justify-all;">
   Industry Visit Tour System is a specific web based reservation system designed to make it easier for people or college to book industrial tour packages online. The system allows the user to check various travel destinations and choose his destination accordingly. 
-  contact:abc@gmail.com
 </p>
 </div>
 
 <script type="text/javascript">
-  var slideIndex = 0;
-  showSlides();
+	var slideIndex = 0;
+	showSlides();
 
 function showSlides() {
   var i;

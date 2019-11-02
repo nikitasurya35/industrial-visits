@@ -25,6 +25,7 @@ tr:hover {background-color: #ddd;}
 <h1 style="color: SlateBlue;"><b><u>Bookings</b></u></h1>
 <table>
 <tr>
+<th>Package</th>
 <th>Username</th>
 <th>Mode</th>
 <th>Transportation Cost</th>
@@ -43,7 +44,7 @@ $result=$conn->query($sql);
 
 if($result-> num_rows>0) {
  while($row = $result-> fetch_assoc()){
-echo "<tr><td>". $row["Username"] ."</td><td>". $row["Mode"] ."</td><td>". $row["TransCost"] ."</td><td>". $row["Accommodation"] ."</td><td>". $row["Acc_Cost"] ."</td><td>". $row["no_of_people"] ."</td><td>". $row["Total_Cost"] ."</td></tr>";
+echo "<tr><td>". $row["Packagename"] ."</td><td>". $row["Username"] ."</td><td>". $row["Mode"] ."</td><td>". $row["TransCost"] ."</td><td>". $row["Accommodation"] ."</td><td>". $row["Acc_Cost"] ."</td><td>". $row["no_of_people"] ."</td><td>". $row["Total_Cost"] ."</td></tr>";
 }
 echo "</table>";
 }
@@ -55,7 +56,3 @@ $conn->close();
 </table>
 </body>
 </html>
-
-
-
-
